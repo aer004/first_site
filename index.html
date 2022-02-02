@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:#FFEBCD;">
+    <h1 style="font-family:courier;color:blue">Welcome!</h1>
+    <p style="font-family:courier;">Enter your guess of the number!</p>
+    <form method="get">
+      <label for="num" style="font-family:courier">Enter number:</label>
+      <input type="number" id="num" name="num"><br><br>
+      <button type="submit" value="Enter" onclick="myFunction()">Submit</button>
+      <button type="reset" value="Clear">Reset</button>
+
+      <p id="demo"></p>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("num").value;
+          if (x == 42){
+            document.getElementById("demo").innerHTML = 'Yayy'
+          }
+          else {
+            document.getElementById("demo").innerHTML = 'Try Again'
+          }
+        }
+      </script>
+    </form>
+    <p style="font-family:courier;color:red">Hint:</p>
+    <img src="https://www.denofgeek.com/wp-content/uploads/2019/08/hh_main.jpg?resize=768%2C432" alt="">
+  </body>
+</html>
+
+<!---
+  Websites used:
+  https://www.w3schools.com/tags/att_button_type.asp (lines 10 - 14)
+  https://www.w3schools.com/jsref/dom_obj_number.asp (line 20)
+  https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_number_get (lines 13, 18 - 28)
+  https://www.w3schools.com/tags/tag_img.asp (line 31)
+  https://www.w3schools.com/tags/tag_script.asp (lines 18 - 28)
+  https://www.denofgeek.com/tv/how-the-new-hitchhiker-s-guide-to-the-galaxy-tv-series-can-get-it-right/ (image)
+--->
